@@ -1,0 +1,25 @@
+<?php
+
+
+$uname2 =$_POST['username'];
+$phno   =$_POST['mobilenumber'];
+$email  =$_POST['email'];
+$pwd2   =$_POST['password'];
+
+//database connection
+$conn=new mysqli('localhost','root','','signup');
+if($conn->connect_error)
+{
+    die('connection Failed  :  '.$conn->connect_error);
+}
+else
+{
+    $stmt=$conn->prepare("insert into(username,mobilenumber,email,password) values(?,?,?,?)");
+    $stmt->bind_param("ssss",$username,$mobilenumber,$email,$password);
+    $stmt->execute();
+echo "Registration Successfull....";
+$stmt->close();
+$conn->close();
+}
+
+?>

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, inital-scale=1.0">
+    <title>Online E-learning Portal</title>
+
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <!-- custom style file link -->
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+    <!-- custom js file link -->
+    <script src="script.js"></script>
+
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="assets/logo.jpg" download><img id="logo" src="assets/logo.jpg" alt="logo"></a>
+    
+            <button title="toggler" class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    
+                <ul class="navbar-nav">
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html"><i class="fa fa-fw fa-home"></i>Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html"><i class="fa-solid fa-info"></i> About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="mailto:mailsurya@gmail.com"><i class="fa fa-fw fa-envelope"></i> Query</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="users.php"></i><i class="fa fa-fw fa-user"></i> users</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="CheckBook.php"><i class="fa fa-book fa-fw"></i> Track</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="feedback.html"><i class="fa-solid fa-comments"></i> Feedback</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="uploadindex.php"><i class="fa fa-file-text"></i> Upload</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="filetransfer.html"><i class="fa fa-share-alt"></i> Share</a>
+                    </li>
+
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"><i class="fas fa-directions"></i> GoTo</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="goto"  href="#cn">Computer Networks</a></li>
+                            <li><a class="goto"  href="#coca">Computer Organisation</a></li>
+                            <li><a class="goto" href="#coca">Computer Architecture</a></li>
+                            <li><a class="goto"  href="#fantasy">fantasy</a></li>
+                            <li><a class="goto"  href="#autobiography">autobiography</a></li>
+                        </ul>
+                    </li>
+
+                    <form id="form">
+                        <input type="text" autocomplete="off" id="search" placeholder="Search" class="search" onkeyup="search_book()">
+                    </form>
+
+                    
+                </ul>
+
+            
+            </div>
+
+            
+
+          
+            <form action="logout.php" method="post">
+                <button id="logout" type="submit">Logout</button>
+            </form>
+            
+        </div>
+    </nav>
+
+
+    <div class="library">
+        <h2 class="gotoheading">Computer Networks</h2>
+        <div class="books cn" id="cn">
+            <div class="content">
+                <img class="bookimg" src="assets/cn_book1.jpg" alt="cn_book1">
+                <h6 class="bookh6">Pearson</h3>
+                <p class="bookp">5th Edition</p>
+                <a class="download" href="download.php?file=cn3"><button>DOWNLOAD</button></a>
+                <a class="bread" href="https://www.ucg.ac.me/skladiste/blog_44233/objava_64433/fajlovi/Computer%20Networking%20_%20A%20Top%20Down%20Approach,%207th,%20converted.pdf" target="_blank"><button title="r1" class="read">READ</button></a>
+                
+            </div>
+
+            <div class="content">
+                <img class="bookimg" src="assets/cn_book2.jpg" alt="cn_book2">
+                <h6 class="bookh6">Bhavneet Sidhu</h6>
+                <p class="bookp">3rd Edition</p>
+                <a class="download" href="download.php?file=cn3"><button>DOWNLOAD</button></a>
+                <a class="bread" href="https://eclass.teicrete.gr/modules/document/file.php/TP326/%CE%98%CE%B5%CF%89%CF%81%CE%AF%CE%B1%20(Lectures)/Computer_Networking_A_Top-Down_Approach.pdf"><button title="r1" class="read">READ</button></a>
+                
+            </div>
+
+            <div class="content">
+                <img class="bookimg" src="assets/cn_book3.jpg" alt="cn_book3">
+                <h6 class="bookh6">Kurose-Ross</h6>
+                <p class="bookp">8th edition</p>
+                <a class="download" href="download.php?file=cn3"><button>DOWNLOAD</button></a>
+                <a href="https://eclass.teicrete.gr/modules/document/file.php/TP326/%CE%98%CE%B5%CF%89%CF%81%CE%AF%CE%B1%20(Lectures)/Computer_Networking_A_Top-Down_Approach.pdf"  target="_blank"><button title="r1" class="read">READ</button></a>
+                
+            </div>
+            <div class="content">
+                <img class="bookimg" src="assets/cn_book4.jpg" alt="cn_book4">
+                <h6 class="bookh6">Jaguessar</h6>
+                <p class="bookp">4th Edition</p>
+                <a class="download" href="download.php?file=cn3"><button>DOWNLOAD</button></a>
+                <a class="bread" href="https://eclass.teicrete.gr/modules/document/file.php/TP326/%CE%98%CE%B5%CF%89%CF%81%CE%AF%CE%B1%20(Lectures)/Computer_Networking_A_Top-Down_Approach.pdf"  target="_blank"><button title="r1" class="read">READ</button></a>
+            </div>
+        
+        </div>
+        <h2 class="gotoheading">Computer Organisation & Computer Architecture</h2>
+        <div class="books coca" id="coca">
+            <div class="content">
+                <img class="bookimg" src="assets/COCA_book1.jpg" alt="coca_book1">
+                <h6 class="bookh6">Linda Null</h3>
+                    <p class="bookp">2nd Edition</p>
+                    <a class="download" href="download.php?file=cn3"><button>DOWNLOAD</button></a>
+                    <a class="bread" href="https://junyours.files.wordpress.com/2012/07/computer-organization-and-architecture.pdf"  target="_blank"><button title="r1" class="read">READ</button></a>
+                    
+            </div>
+            <div class="content">
+                <img class="bookimg" src="assets/COCA_book2.jpg" alt="coca_book2">
+                <h6 class="bookh6">Pankaj Sharma</h6>
+                <p class="bookp">6th Edition</p>
+                <button title="r1" class="read">Coming Soon</button>
+        
+            </div>
+            <div class="content">
+                <img class="bookimg" src="assets/COCA_book3.jpg" alt="coca_book3">
+                <h6 class="bookh6">William Stallings</h6>
+                <p class="bookp">8th edition</p>
+                <a class="download" href="download.php?file=cn3"><button>DOWNLOAD</button></a>
+                <a class="bread" href="http://home.ustc.edu.cn/~louwenqi/reference_books_tools/Computer%20Organization%20and%20Architecture%2010th%20-%20William%20Stallings.pdf"  target="_blank"><button title="r1" class="read">READ</button></a>
+                
+        
+            </div>
+            <div class="content">
+                <img class="bookimg" src="assets/COCA_book4.jpg" alt="coca_book4">
+                <h6 class="bookh6">William Stallings</h6>
+                <p class="bookp">10th Edition</p>
+                <a class="download" href="download.php?file=cn3"><button>DOWNLOAD</button></a>
+                <a class="bread" href="http://home.ustc.edu.cn/~louwenqi/reference_books_tools/Computer%20Organization%20and%20Architecture%2010th%20-%20William%20Stallings.pdf"  target="_blank"><button title="r1" class="read">READ</button></a>
+               
+        
+            </div>
+        </div>
+
+        <h2 class="gotoheading">Fantasy</h2>
+        <div class="books fanatasy" id="fantasy">
+            <div class="content">
+                <img class="bookimg" src="assets/fantasy_book1.jpg" alt="fantasy_book1">
+                <h6 class="bookh6">Shadow & Bone</h3>
+                    <p class="bookp">Grishaverse</p>
+                    <button title="r1" class="read">Coming Soon</button>
+            </div>
+            <div class="content">
+                <img class="bookimg" src="assets/fantasy_book2.jpg" alt="fantasy_book2">
+                <h6 class="bookh6">Harry Potter</h6>
+                <p class="bookp">Sorecerers Stone</p>
+                <button title="r1" class="read">Coming Soon</button>
+        
+            </div>
+            <div class="content">
+                <img class="bookimg" src="assets/fantasy_book3.jpg" alt="fantasy_book3">
+                <h6 class="bookh6">Spider-man</h6>
+                <p class="bookp">Part-02</p>
+                <button title="r1" class="read">Coming Soon</button>
+        
+            </div>
+            <div class="content">
+                <img class="bookimg" src="assets/fantasy_book4.jpg" alt="fantasy_book4">
+                <h6 class="bookh6">Bat Man</h6>
+                <p class="bookp">Volume-03</p>
+                <button title="r1" class="read">Coming Soon</button>
+        
+            </div>
+        </div>
+
+        <h2 class="gotoheading">Auto Biography</h2>
+        <div class="books autobiography" id="autobiography">
+            <div class="content">
+                <img class="bookimg" src="assets/ab_book1.jpg" alt="autobiography_book1">
+                <h6 class="bookh6">Mahatma Gandhi</h3>
+                    <p class="bookp">Auto Biography</p>
+                    <a class="bread" href="https://ignca.gov.in/Asi_data/1800.pdf"><button title="r1" class="read">READ</button></a>
+                    <!-- <button title="r1" class="read">Available</button> -->
+            </div>
+            <div class="content">
+                <img class="bookimg" src="assets/ab_book2.jpg" alt="fantasy_book2">
+                <h6 class="bookh6">abdul kalam</h6>
+                <p class="bookp">Auto Biography</p>
+                <button title="r1" class="read">Coming Soon</button>
+        
+            </div>
+            <div class="content">
+                <img class="bookimg" src="assets/ab_book3.jpg" alt="fantasy_book3">
+                <h6 class="bookh6">Einstien</h6>
+                <p class="bookp">Auto Biography</p>
+                <button title="r1" class="read">Coming Soon</button>
+        
+            </div>
+            <div class="content">
+                <img class="bookimg" src="assets/ab_book4.jpg" alt="fantasy_book4">
+                <h6 class="bookh6">Steve Jobs</h6>
+                <p class="bookp">Auto Biography</p>
+                <button title="r1" class="read">Coming Soon</button>
+        
+            </div>
+        
+        </div>
+
+    </div>
+
+</body>
+
+
+</html>

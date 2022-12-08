@@ -1,0 +1,671 @@
+#logo
+{
+    /* height:40px; */
+    height:2.5rem;
+}
+
+#logo:hover
+{
+   transform: scale(1.5); 
+
+}
+
+.goto
+{
+  text-decoration:none;
+}
+
+
+h2.gotoheading
+{
+  text-align:center;
+  color:black;
+  background-color: chartreuse;
+  border:2px solid chartreuse;
+  width:25rem;
+  margin:auto;
+}
+
+#welcome
+{
+    /* text-align: center; */
+    /* margin-top:80px; */
+    margin-top:10rem;
+
+    color:white;
+    font-size:10vh;
+   font-family:cursive;
+   justify-content: center;
+   /* margin:auto; */
+}
+
+#page1
+{
+    
+    margin-top:0;
+    background-image: url(assets/library_pic.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+
+.typewriter h1
+{
+    margin-left:20vh;
+    /* height:50vh; */
+    /* float:top;  */
+    display:block;
+    width:100%;
+}
+
+
+#loginform
+{
+    border:3px solid #f1f1f1;
+    border-radius:10px;
+    display:none;
+    width:40%;
+   height:auto;
+    background-color:black;
+    min-width: 300px;
+    justify-content:center;
+    margin:5% 30% 10% 30%;
+}
+
+#lcancel
+{
+float: right;
+}
+
+#signupform
+{
+    border:3px solid #f1f1f1;
+    border-radius:10px;
+    display:none;
+    width:35%;
+    height:90vh;
+    background-color:black;
+    min-width: 300px;
+    justify-content:center;
+    margin:2% 20% 10% 20%;
+}
+
+#page2
+{
+  height:50vh;
+  background-color: black;
+  background-image: url(assets/page2\(bg\).jpg);
+  background-size: cover;
+  width:100%;
+}
+
+  .carousel-item
+  {
+    margin-top:12vh;
+  }
+
+
+.cpic:hover
+{
+transform:scale(1.15);
+}
+
+
+
+#loginp,#signupp
+{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:x-large;
+}
+
+.cancelbtn
+{
+    margin-top:0;
+
+}
+
+
+label
+{
+    color: white;
+}
+
+
+/* Full-width inputs */
+#loginform input[type=text],input[type=email], input[type=password] 
+{
+    width: 100%;
+    padding: 10px 20px;
+    margin: 5px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+#signupform input[type=text],input[type=email],input[type=password] {
+  width: 100%;
+  padding: 10px 20px;
+  margin: 5px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+  
+  #loginform input
+  {
+    display:inline;
+  }
+
+
+  /* navbar login and signup buttons styling */
+
+#login{
+  background-color: blue;
+  color: white;
+  /* padding: 14px 20px; */
+  /* margin: 8px 0; */
+  border-radius:10px;
+  border: none;
+  width:100px;
+  cursor: pointer;
+}
+
+#signup {
+  background-color: rgb(239, 255, 67);
+  color: black;
+  /* padding: 14px 20px; */
+  /* margin: 8px 0; */
+  border-radius: 10px;
+    border: none;
+    width: 100px;
+  border: none;
+  cursor: pointer;
+}
+
+
+#lsubmit,#rsubmit 
+{
+      background-color: #04AA6D;
+      color: white;
+      /* padding: 14px 20px; */
+      /* margin: 8px 0; */
+      border: none;
+      cursor: pointer;
+}
+  
+  /* Add a hover effect for buttons */
+  button:hover 
+  {
+    opacity: 0.8;
+  }
+  
+  .cancelbtn:hover
+{
+    opacity:0.5;
+
+}
+
+
+  /* Extra style for the cancel button (red) */
+  .cancelbtn {
+    width: auto;
+    /* padding: 10px 18px; */
+    background-color: #f44336;
+    color: white;
+  }
+
+
+  
+  /* Center the avatar image inside this container */
+  .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+  }
+  
+  /* Avatar image */
+  img.avatar {
+    width: 20vh;
+    border-radius: 50%;
+  }
+  
+  /* Add padding to containers */
+  .container {
+    padding: 16px;
+  }
+  
+  /* The "Forgot password" text */
+  span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+  
+
+.calccontainer
+{
+max-width:400px;
+margin:10vh auto 0 auto;
+box-shadow:0px 0px 0px 43px 17px rgba(153,153,153,1);
+color:white;
+background-color:black;
+width:35%;
+height:75vh;
+min-width:300px;
+justify-content:center;
+margin:10% 20% 10% 20%;
+
+}
+
+#display
+{
+   text-align:right; 
+   height:70px;
+   line-height:70px;
+   padding:16px 8px;
+   font-size:25px;
+   border:2px solid white;
+   
+}
+
+.buttons
+{
+    display:grid;
+    border:1px solid white;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+
+}
+
+.buttons>div{
+    border-top: 1px solid #999;
+    border-left:1px solid #999;
+}
+
+.button
+{
+   border:1px solid black;
+   line-height:80px;
+   text-align: center;
+   cursor:pointer;
+
+}
+
+
+#equal
+{
+    background-color:#5555ff;
+    color:white;
+}
+
+.button:hover
+{
+    background-color:white;
+    color:black;
+    font-size: large;
+}
+
+#equal:hover
+{
+background-color:greenyellow;
+color:orange;
+font-size: large;
+
+}
+
+
+/* books page styling */
+
+.library,.course
+{
+  margin:5rem 0 0 0;
+}
+
+
+
+.books,.courses
+{
+  display:flex;
+  flex-wrap:wrap;
+  width:100%;
+  justify-content:center;
+  align-items:center;
+  margin:50px 0;
+}
+
+.content
+{
+  width:250px;
+  margin:15px;
+  box-sizing:border-box;
+  float:left;
+  text-align:center;
+  border-radius:20px;
+  cursor:pointer;
+  padding-top:10px;
+  box-shadow:0 14px 28px rgba(0,0,0,0.25),
+  0 10px 10px rgba(0,0,0,0.22);
+  transition: 0.4s;
+  background:#f2f2f2;
+  
+
+}
+
+.content:hover
+{
+ box-shadow:0 3px 6px rgba(0,0,0,0.16),
+ 0 3px 6pxrgba(0,0,0,0.23);
+ transform:translate(0px,-8px); 
+}
+
+.bookimg {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  display:block;
+}
+
+.bookp
+{
+  text-align:center;
+  color:black;
+  padding-top:0 8px;
+}
+
+.bookh6
+{
+  font-size:26px;
+  text-align:center;
+  color:#222f3e;
+  margin:0;
+
+}
+
+.read
+{
+  text-align:center;
+  font-size:24px;
+  color:#fff;
+  background-color:black;
+  width:100%;
+  padding:15px;
+  border:0;
+  outline:none;
+  cursor:pointer;
+  margin-top:5px;
+  border-bottom-left-radius:20px;
+    border-bottom-right-radius: 20px;
+}
+
+
+/* stying for the search bar in the nav bar */
+.search 
+{
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  border: 2px solid white;
+  background-color: transparent;
+  font-family: inherit;
+  color: white;
+  font-size: 1rem;
+}
+
+.search::placeholder {
+  color: #afb2dc;
+}
+
+.search:focus
+{
+  outline: none;
+  background-color: #05082c;
+}
+
+
+  /* Change styles for span and cancel button on extra small screens */
+
+
+  @media screen and (max-width: 300px) {
+    span.psw {
+      display: block;
+      float: none;
+    }
+    .cancelbtn {
+      width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    #page1
+    {
+        height:50vh;
+    }
+    #page2
+    {
+        height:25vh;
+    }
+
+    .carousel-item
+    {
+    margin-top:7vh;
+    }
+
+    #welcome
+    {
+        font-size:5vh;
+        margin-left: 10vh;
+        margin-top:5rem;
+    }
+    
+#loginform
+{
+    border:1.5px solid #f1f1f1;
+    border-radius:5px;
+    display:none;
+    width:17.5%;
+    height:auto;
+    background-color:black;
+    min-width: 300px;
+    justify-content:center;
+    margin:2% 10% 10% 10%;
+}
+
+#signupform
+{
+    border:1.5px solid #f1f1f1;
+    border-radius:5px;
+    display:none;
+    width:17.5%;
+    height:auto;
+    background-color:black;
+    min-width: 300px;
+    justify-content:center;
+    margin:2% 10% 10% 10%;
+}
+
+
+#loginp,#signupp
+{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:x-small;
+}
+
+.cancelbtn
+{
+    margin-top:0;
+
+}
+
+
+
+/* Full-width inputs */
+input[type=text],input[type=email], input[type=password] {
+    width: 100%;
+    padding: 10px 20px;
+    margin: 5px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  #loginform input
+  {
+    display:inline;
+  }
+
+  /* Set a style for all buttons */
+
+  /* button 
+  {
+    background-color: #04AA6D;
+    color: white;
+     padding: 14px 20px;
+     margin: 8px 0;
+    border: none;
+    cursor: pointer;
+  } */
+
+  #lsubmit,#rsubmit
+  {
+      background-color: #04AA6D;
+      color: white;
+      /* padding: 14px 20px; */
+      /* margin: 8px 0; */
+      border: none;
+      cursor: pointer;
+  }
+  
+  /* Add a hover effect for buttons */
+  button:hover 
+  {
+    opacity: 0.8;
+  }
+  
+  .cancelbtn:hover
+{
+    opacity:0.5;
+
+}
+
+  /* Extra style for the cancel button (red) */
+  .cancelbtn {
+    width: auto;
+    /* padding: 10px 18px; */
+    background-color: #f44336;
+    color: white;
+  }
+  
+  /* Center the avatar image inside this container */
+  .imgcontainer {
+    text-align: center;
+    margin: 12px 0 6px 0;
+  }
+  
+  /* Avatar image */
+  img.avatar {
+    width: 10vh;
+    border-radius: 50%;
+  }
+  
+  /* Add padding to containers */
+  .container {
+    padding: 8px;
+  }
+  
+  /* The "Forgot password" text */
+  span.psw {
+    float: right;
+    padding-top: 4px;
+  }
+
+
+
+.calccontainer
+{
+  
+    min-width:200px;
+    margin:20% 10% 5% 10%;
+    width:17.5%;
+    height:auto;
+    min-width: 300px;
+    justify-content:center;
+}
+
+#display
+{
+   height:35px;
+   line-height:35px;
+   padding:8px 4px;
+   font-size:25px;
+   border:1px solid black;
+}
+
+
+.button
+{
+   line-height:50px;
+
+}
+
+.books{
+  display:flex;
+  overflow-x: auto;
+  
+}
+
+.books::-webkit-scrollbar
+{
+  width:0;
+}
+
+
+/* books page styling for small screens*/
+
+.library {
+  margin: 2.5rem 0 0 0;
+}
+
+
+.books {
+  width: 100%;
+  margin: 25px 0;
+}
+
+.content {
+  width: 125px;
+  margin: 7px;
+  border-radius: 10px;
+  padding-top: 5px;
+  box-shadow: 0 7px 14px rgba(0, 0, 0, 0.25),
+    0 10px 10px rgba(0, 0, 0, 0.22);
+
+
+}
+
+.content:hover {
+  transform: translate(0px, -4px);
+}
+
+.bookimg {
+  width: 100px;
+  height: 100px;
+}
+
+.bookp {
+  padding-top: 0 4px;
+}
+
+.bookh6 {
+  font-size: 13px;
+}
+
+.read
+{
+  font-size: 12px;
+  color: #fff;
+  background-color: black;
+  width: 50%;
+  padding: 7px;
+  margin-top: 5px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+  }
+
+
